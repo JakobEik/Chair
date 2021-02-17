@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.my-kbe.com/shapes.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.my-kbe.com/shapes.owl"/>
+  <owl:Class rdf:about="http://www.my-kbe.com/shapes.owl#Block">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.my-kbe.com/shapes.owl#Cube">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.my-kbe.com/shapes.owl#Cylinder">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.my-kbe.com/shapes.owl#Shpere">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://www.my-kbe.com/shapes.owl#hasWidth">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.my-kbe.com/shapes.owl#Block"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.my-kbe.com/shapes.owl#hasHeight">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.my-kbe.com/shapes.owl#Block"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.my-kbe.com/shapes.owl#hasLength">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.my-kbe.com/shapes.owl#Block"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.my-kbe.com/shapes.owl#hasSide">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://www.my-kbe.com/shapes.owl#Cube"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </owl:DatatypeProperty>
+  <Block rdf:about="http://www.my-kbe.com/shapes.owl#topPlate">
+    <hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >70</hasHeight>
+    <hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >3000</hasLength>
+    <hasWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >1000</hasWidth>
+  </Block>
+  <Cube rdf:about="http://www.my-kbe.com/shapes.owl#cube_1">
+    <hasSide rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >5</hasSide>
+  </Cube>
+  <Cube rdf:about="http://www.my-kbe.com/shapes.owl#cube_3">
+    <hasSide rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >125</hasSide>
+  </Cube>
+  <Cube rdf:about="http://www.my-kbe.com/shapes.owl#cube_2">
+    <hasSide rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >25</hasSide>
+  </Cube>
+  <Block rdf:about="http://www.my-kbe.com/shapes.owl#leg">
+    <hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >700</hasHeight>
+    <hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >70</hasLength>
+    <hasWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >70</hasWidth>
+  </Block>
+  <owl:DataRange>
+    <owl:oneOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </owl:DataRange>
+  <owl:DataRange>
+    <owl:oneOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </owl:DataRange>
+</rdf:RDF>

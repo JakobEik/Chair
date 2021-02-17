@@ -1,0 +1,50 @@
+#! NX/KF 4.0
+DefClass:myTable (ug_base_part);
+    (number parameter) topHeight: <topH>;
+	(number parameter) topWidth: <topW>;
+	(number parameter) topLength: <topL>;
+	(number parameter) legLength: <legL>;
+	(number parameter) legWidth: <legW>;
+	(number parameter) legHeight: <legH>;
+
+(child) top:
+    {
+        class, ug_block;
+        length, topLength:;
+        width, topWidth:;
+        height, topHeight:;
+		Origin, Point(-topLength:/2, -topWidth:/2, legHeight:);
+    };
+
+(child) leg1: {
+	Class, ug_block;
+	length, legLength:;
+	width, legWidth:;
+	height, legHeight:;
+	Origin, Point(topLength:/2 - legLength:, topWidth:/2 - legWidth:, 0);
+    };
+
+(child) leg2: {
+	Class, ug_block;
+	length, legLength:;
+	width, legWidth:;
+	height, legHeight:;
+	Origin, Point(topLength:/2 - legLength:, -(topWidth:/2), 0);
+    };
+
+(child) leg3: {
+	Class, ug_block;
+	length, legLength:;
+	width, legWidth:;
+	height, legHeight:;
+	Origin, Point(-(topLength:/2), -(topWidth:/2), 0);
+    };
+
+(child) leg4: {
+	Class, ug_block;
+	length, legLength:;
+	width, legWidth:;
+	height, legHeight:;
+	Origin, Point(-(topLength:/2), topWidth:/2 - legWidth:, 0);
+    };
+
