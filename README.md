@@ -1,6 +1,9 @@
 # Table
 I was tasked with making a automated system for table-manufacturing based on KBE(Knowledge-based engineering). The system would provide a interface to be accessed on the web. Both customers and engineers could input desired measurements. This would then be send to the server that would update a Knowledge Fusion template and update it in Siemens NX. The goal of the project was to automate the whole process, and incorporates a number of different systems.
 
+# Architecture
+<img width="950" alt="Client-Server" src="https://user-images.githubusercontent.com/75979776/134350867-a1e59efe-f3eb-4de8-b6da-47cb35831674.png">
+
 # Setup
 In order to run our application you have to pip install requests. Some of the imported modules might need a newer version of Python. The program has been made and tested with Python 3.8 so if we can’t guarantee that it will work for older versions .
 To setup the application you will need Apache Jena Fuseki server. Once the server is running, upload the shapes.owl ontology to the server. Then unzip and extract all from the zip file and save it to a preferred location.
