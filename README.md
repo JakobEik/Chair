@@ -1,4 +1,5 @@
 # Table
+I was tasked with making a automated system for table-manufacturing based on KBE(Knowledge-based engineering). The system would provide a interface to be accessed on the web. Both customers and engineers could input desired measurements. This would then be send to the server that would update a Knowledge Fusion template and update it in Siemens NX. The goal of the project was to automate the whole process, and incorporates a number of different systems.
 
 # Setup
 In order to run our application you have to pip install requests. Some of the imported modules might need a newer version of Python. The program has been made and tested with Python 3.8 so if we can’t guarantee that it will work for older versions .
